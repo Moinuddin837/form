@@ -6,41 +6,63 @@
     <title>Document</title>
 </head>
 <body>
-    <center>
-        <h1>Login Form</h1>
-    </center>
+        <h1 align="center"><u>Login Form</u></h1>
     <form>
-   Username: <input type="text">
-   <br></br>
-    Password: <input type="password"><br></br>
-    City of Employment <input type="text" name="city"><br></br>
-    Web server:
+        <table align="center" width="60%" cellpadding="8">
+            <tr>
+                <td>
+       <label for="uname"> Username:</label></td> 
+  <td> <input type="text" name="uname" id="uname" value="username" size="25"></td>
+   <tr>
+    <td><label for="p">Password:</label></td>
+     <td><input type="password" id="p" value="password" size="25" ></td>
+   </tr>
+   <tr>
+    <td>
+    City of <br>Employment: </td>
+    <td><input type="text" name="city" size="25"></td>
+   </tr>
+   <tr>
+    <td> Web server:</td>
+    <td>
     <select name="server" id="server">
-        <option>-Choose a server-</option>
-        <option value="apache">Apache</option>
-        <option value="iis">IIS</option>
-        <option value="http">HTTP</option>
-        <option value="other">Other</option>
-    </select><br></br>
-  <Label>  Please specify your role:</Label><br>
+        <option value="-choose a server-">-Choose a server-</option>
+        <option value="Apache">Apache</option>
+        <option value="Nginx">Nginix</option>
+        <option value="IIS">IIS</option>
+    </select>
+    </td>
+   </tr>
+   <tr>
+    <td>
+  <Label>  Please specify <br> your role:</Label></td>
+    <td>
     <input type="radio"name="role"value="Admin">Admin <br>
     <input type="radio"name="role"value="Engineer">Engineer <br>
     <input type="radio" name="role" value="Manager">Manager <br>
-     <input type="radio" name="role" value="Guest">Guest <br></br>
-    <label for="Single sign-on to the following:">Single sign- on to the following:</label><br>
+     <input type="radio" name="role" value="Guest">Guest </td>
+   </tr>
+   <tr>
+    <td>
+    <label>Single sign- on <br> to the following:</label></td>
+      <td>
     <input type="checkbox"name="Mail">Mail <br>
     <input type="checkbox"name="Payroll">Payroll <br>
-    <input type="checkbox"name="Self-service">Self-service <br>
-    <center>                       
+    <input type="checkbox"name="Self-service">Self-service </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>                   
 <input type="submit"value="login">
-<input type="reset"value="reset">
-    </center>
+<input type="reset"value="reset"></td>
+    </tr>
+</table>
 </form>
-</body>
 <p align="center">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="registration.html">Register</a>
+    <a href="registration.html">register</a>
 </p>
+</body>
 
 </html>
